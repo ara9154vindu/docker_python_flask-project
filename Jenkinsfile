@@ -9,7 +9,7 @@ pipeline {
         }
         stage('pip') {
             steps {
-                sh 'pip install requirements.txt'
+                sh 'pip install flask'
             }
         }
         stage('python') {
