@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/ara9154vindu/Terraform_CICD.git'
+                git branch: 'main', url: 'https://github.com/ara9154vindu/docker_python_flask-project.git'
             }
         }
-        stage('init') {
+        stage('python') {
             steps {
-                sh 'terraform init'
+                sh 'python3 app.py'
             }
         }
     }
