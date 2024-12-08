@@ -19,7 +19,7 @@ pipeline {
         }
         stage('python') {
             steps {
-                sh 'python3 app.py'
+                sh 'nohup python3 app.py &'
             }
         }
     }
