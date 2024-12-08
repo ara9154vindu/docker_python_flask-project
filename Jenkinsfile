@@ -17,5 +17,10 @@ pipeline {
                 sh 'python3 app.py'
             }
         }
+        stage('python') {
+            steps {
+                sh 'python3 app.py'
+            }
+        }
     }
 }
